@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 require(dlookr)
-files <- list.files(path = "~/TarragonaDatathon/datathon/tabkes", pattern = "csv")
+files <- list.files(path = "your path to the CSV tables", pattern = "csv")
 #df <- fread(files[1])
 for (i in 1:length(files)){
   df <- read.csv(files[i])

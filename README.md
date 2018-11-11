@@ -23,7 +23,7 @@ We have tested several R packages and have choosen the Data Quality diagnosis (3
 
 #Conclusions:
 
-The Descriptive Data Quality Assessment (ddQA) score proved to be a feasible approach to analyze eICU Data Quality. We believe it can be 
+The Descriptive Data Quality Assessment score (ddQA) proved to be a feasible approach to analyze eICU Data Quality. We believe it can be 
 extended to other databases.
 
 One of the limitations of this approach was the lack of a well documented database dictionary. This made it difficult to fully understand the meaning of each field and table and which fields accept NULL values. 

@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 require(dlookr)
 files <- list.files(path = "your path to the CSV tables", pattern = "csv")
-#df <- fread(files[1])
+
 for (i in 1:length(files)){
   df <- read.csv(files[i])
   
@@ -37,7 +37,7 @@ for (i in 1:length(files)){
   TabCasOTotCas <- round(((TypMisStats[2,5]/200859)*100), digits = 2)
   
   #Overall Missing Values and Outliers (%) in the file
-  #print(i)
+  
   print(paste(files[i],"Quality Evaluation: Missing Values =", TabMisPerc,"%", "and IrregularValues =", TabOutPerc,"%.", ";", "Total number of rows =", TypMisStats[1,5], ";", "Cases per table =", TypMisStats[2,5],";", "Data Case ratio=", DatCasRat,";", "Overall Cases Percentage =", TabCasOTotCas,"%."))
   print(TypMisStats)
   print(OutStats)

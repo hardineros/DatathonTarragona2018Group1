@@ -1,0 +1,46 @@
+---
+title: "Descriptive Data Quality Assesment"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+require(dlookr)
+files <- list.files(path = "~/TarragonaDatathon/datathon/tabkes", pattern = "csv")
+#df <- fread(files[1])
+for (i in 1:length(files)){
+  df <- read.csv(files[i])
+  
+  for (j in 1:ncol(df)){
+    df[,j] <- ifelse(df[,j]=="",NA,df[,j])
+  }
+  
+  #Descriptive Statistics about types and missing values
+  TypMisStats <- diagnose(df)
+  
+  #Overall percentage of missing values in the table 
+  TabMisPerc <- round (mean(TypMisStats$missing_percent), digits = 2)
+  
+  #Descriptive Statistics about outliers
+  OutStats <- diagnose_outlier(df)
+  
+  #Overall percentage of outliers in the table
+  TabOutPerc <- round (mean(OutStats$outliers_ratio), digits = 2)
+  
+  #Data Case Ratio
+  DatCasRat <- round((TypMisStats[1,5]/TypMisStats[2,5]), digits = 2)
+  
+  #Table Case Percentage over Total Cases
+  TabCasOTotCas <- round(((TypMisStats[2,5]/200859)*100), digits = 2)
+  
+  #Overall Missing Values and Outliers (%) in the file
+  #print(i)
+  print(paste(files[i],"Quality Evaluation: Missing Values =", TabMisPerc,"%", "and IrregularValues =", TabOutPerc,"%.", ";", "Total number of rows =", TypMisStats[1,5], ";", "Cases per table =", TypMisStats[2,5],";", "Data Case ratio=", DatCasRat,";", "Overall Cases Percentage =", TabCasOTotCas,"%."))
+  print(TypMisStats)
+  print(OutStats)
+
+  }
+```

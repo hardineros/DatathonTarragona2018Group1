@@ -37,7 +37,7 @@ Teresa Rincon, <tarincon1@gmail.com>, Boston, USA. Juan Alfonso Soler, <jsolerba
 
 1. Goldberger AL, Amaral LAN, Glass L, Hausdorff JM, Ivanov PCh, Mark RG, Mietus JE, Moody GB, Peng C-K, Stanley HE. PhysioBank, PhysioToolkit, and PhysioNet: Components of a New Research Resource for Complex Physiologic Signals. Circulation 101(23):e215-e220 [Circulation Electronic Pages; http://circ.ahajournals.org/content/101/23/e215.full]; 2000 (June 13).
 
-2.IBM. Data quality dimensions. IBM. Retrieved November 11, 2018, from: https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.5.0/com.ibm.swg.im.iis.ia.product.doc/topics/r_quality_indicators.html
+2. IBM. Data quality dimensions. IBM. Retrieved November 11, 2018, from: https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.5.0/com.ibm.swg.im.iis.ia.product.doc/topics/r_quality_indicators.html
 
 3. Choonghyun Ryu. Data quality diagnosis. Retrieved November 11, 2018, from: 
 https://cran.r-project.org/web/packages/dlookr/vignettes/diagonosis.html

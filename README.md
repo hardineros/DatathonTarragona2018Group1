@@ -30,7 +30,7 @@ The total number of patients in eICU database was 200,859.
 - Overall Cases (%): The number of cases on each table related to total number of cases in the whole database.
 - Outliers mean : Arithmetic Average of outliers.
 
-There is an additional table showing an outlier ratio, that is the percentage of outliers for each variable contained in each table in the eICU database.
+There are two additional tables: One describing each of the missing values. And anotherone showing an outlier ratio, that is the percentage of outliers for each variable contained in each table in the eICU database. 
 
 #Conclusions:
 
@@ -39,7 +39,7 @@ extended to other databases.
 
 One of the limitations of this approach was the lack of a well documented database dictionary. This made it difficult to fully understand the meaning of each field and table and which fields accept empty values. Another issue was the lack of time and computing power to advance in further analyses. For healthcare databases, always a clinical point of view should be applied to the results of these assessment approach, because no decision can be made without a solid clinical data comprehension.
 
-This work and common effort could be a starting point to create an International Critical Data Index (ICDI). A more thorough description of the variables commonly found in the tables, documented in a standard way, would support better and wider big data, machine learning and a collaborative investigation framework. This could also improve potential interoperability between other databases. 
+This work and common effort could be a starting point to create an International Critical Data Index (ICDI) framework. A more thorough description of the variables commonly found in the tables, documented in a standard way, would support better and wider big data, machine learning and a collaborative investigation framework. This could also improve potential interoperability between other databases. 
 
 #Team 1 Members: 
 Teresa Rincon, <tarincon1@gmail.com>, Boston, USA. Juan Alfonso Soler, <jsolerbarnes@gmail.com>, Murcia, ESP. Josep Trenado <jtrenado@mutuaterrassa.es>, Terrassa, ESP. Ariel Leonardo Fernandez <hardineros@hardineros.com>, Buenos Aires, Argentina.s
